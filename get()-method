@@ -1,0 +1,12 @@
+name = {"Name":"Deepankar","Class":"Pathak"}
+# for i in name.items():
+#     print(i)
+
+# print("Name" in name.keys())
+print(name.get("Name","Deepankar"))
+print(name.get("Work","Harder")) #here if we do not use get than it will generate an error,with the help of get default value to work is Harder
+# print(name("You","Are")) # Here Error Will Occur
+
+**** **** ****
+Deepankar
+Harder
