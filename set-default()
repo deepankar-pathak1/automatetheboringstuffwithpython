@@ -1,0 +1,18 @@
+name = {"Color":"Black","Class":"First"}
+# if "heaven" not in name:
+#     name["heaven"] = "Good"
+#
+# print(name)
+
+# now with the help of set default we can use as
+print(name.setdefault("work","Harder")) #new key value pair will be cretaed work:Harder
+print(name)
+print(name.setdefault("work","Stronger")) # as we have Key work it will not get modified agin to stronger
+print(name)
+
+**** **** *****
+
+Harder
+{'Color': 'Black', 'Class': 'First', 'work': 'Harder'}
+Harder
+{'Color': 'Black', 'Class': 'First', 'work': 'Harder'}
