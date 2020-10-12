@@ -1,0 +1,13 @@
+# Open a File
+x = open("ok.txt","r")
+print(x)
+
+y = "Deepankar\nPathak"
+print(y)
+print(len(y))
+
+Deepankar
+Pathak
+16
+
+
