@@ -1,0 +1,71 @@
+# count = 0
+# x = "deepankar"
+# for i in x:
+#     if i == "e":
+#         count += 1
+# print(f"Number of e : {count}")
+
+# Indexing with string
+
+x = "Deepankar"
+print(x[:])
+print(x[:4])
+print(x[4:])
+print(x[4:12])
+
+
+
+a = "deepankar"
+print(a + " Pathak")
+
+print("d" in a)
+
+for i in a:
+    if i == "d":
+        print("d is Present")
+        
+        
+        
+        
+name = "deepankar"
+print(name.upper()) # here .upper() is changing name from Upper case but variable is not changing.
+print(name) # here variable is same in lower case.      
+
+DEEPANKAR
+deepankar
+
+
+
+name = "Deepankar"
+print(name.find("p")) #find() finds the first occurence of the substring
+print(name.find("R")) # when nothing is present in string we get Negative flag (-1).
+
+3
+-1
+
+
+
+x = "Deepankar Pathak"
+y = x.replace("Pathak","pathak")
+print(x)
+print(y)
+
+Deepankar Pathak
+Deepankar pathak
+
+# Stripping White Space
+x = "   Deepu   "
+print(x.lstrip()) # used to remove Left space
+print(x.rstrip()) # used to remove left space
+print(x.strip()) # used to remove l and r space
+
+Deepu   
+   Deepu
+Deepu
+
+
+
+x = "what is Your name"
+print(x.startswith("what"))
+
+True
