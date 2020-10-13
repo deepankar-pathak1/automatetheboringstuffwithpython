@@ -1,0 +1,15 @@
+# lambda funstion and sort
+# lambda is anonmys function it means it is one linear function
+
+# def quick_add(a,b):
+#     c = a + b
+#     return c
+#
+# print(quick_add(2,3))
+
+# quick_start = lambda a,b : a +b
+# print(quick_start(5,6))
+
+a = [[1,2],[7,8],[12,1],[11,6]]
+a.sort(key=lambda a:a[0])
+print(a)
