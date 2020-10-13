@@ -1,0 +1,22 @@
+# Test whether a number is within 100 of 1000 or 2000
+count = 0
+while count < 5:
+    number = int(input("Enter Number to Check : "))
+    if (abs(1000 -(number)) <= 100) or (abs(2000 -(number)) <= 100):
+        print(f"Number in Range : {number}")
+    else:
+        print(f"Number out of Range : {number}")
+    count += 1
+    
+Enter Number to Check : 80
+Number out of Range : 80
+Enter Number to Check : 950
+Number in Range : 950
+Enter Number to Check : 900
+Number in Range : 900
+Enter Number to Check : 890
+Number out of Range : 890
+Enter Number to Check : 11
+Number out of Range : 11
+
+Process finished with exit code 0
