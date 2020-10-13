@@ -1,0 +1,22 @@
+a = int(input("Enter Number 1 : "))
+b = int(input("Enter Number 2 : "))
+c = int(input("Enter Number 3 : "))
+
+if a == b == c:
+    d = (a+b+c) * 3
+    print(f"Number's are : {a},{b},{c} And Result is : {d}")
+else:
+    e = a + b + c
+    print(f"Sum of Three Number : {a},{b},{c} is : {e}")
+    
+    
+Enter Number 1 : 10
+Enter Number 2 : 11
+Enter Number 3 : 2
+Sum of Three Number : 10,11,2 is : 23
+
+
+Enter Number 1 : 5
+Enter Number 2 : 5
+Enter Number 3 : 5
+Number's are : 5,5,5 And Result is : 45
