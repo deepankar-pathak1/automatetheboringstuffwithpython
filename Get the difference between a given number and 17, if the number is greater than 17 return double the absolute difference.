@@ -1,0 +1,13 @@
+number = 17
+a = int(input("Number For Difference : "))
+
+diff = number - a
+print(f"Diffrence is :  {diff}")
+if a > number:
+    c = abs(diff * 2)
+    print(f"{a} is greater than {number},So Double is {c}")
+
+
+
+Number For Difference : 14
+Diffrence is :  3
