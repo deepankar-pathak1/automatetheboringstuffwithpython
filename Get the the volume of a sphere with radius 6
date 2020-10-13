@@ -1,0 +1,5 @@
+# Get the the volume of a sphere with radius 6
+# import math
+# r = int(input("Radious : "))
+# v = (4/3)*(math.pi)*(r**3)
+# print(f"Volume of Sphere : {v} with Radious : {r}")
