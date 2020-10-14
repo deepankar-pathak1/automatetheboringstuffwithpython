@@ -1,0 +1,25 @@
+Create a histogram from a given list of integers
+
+
+
+# a = input("Enter Charcter : ")
+#
+# print(a * 2)
+# print(a * 3)
+# print(a * 6)
+# print(a * 5)
+
+
+
+char = input("Enter Character : ")
+a = [2, 3, 6, 5]
+for i in a:
+    print(i * char)
+    
+    
+Enter Character : #
+
+##
+###
+######
+#####
