@@ -1,0 +1,7 @@
+Concatenate all elements in a list into a string and return it.
+
+lst = ["d","E","e","P","u"]
+for i in lst:
+    print(i,end="")
+    
+dEePu
