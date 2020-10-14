@@ -1,0 +1,14 @@
+Check whether a specified value is contained in a group of values
+a = int(input("Enter Number : "))
+b = [1, 5, 8, 3]
+
+if a in b:
+    print(f"Number {a} in List")
+else:
+    print(f"Number {a} not in list")
+    
+    
+    
+    
+Enter Number : 0
+Number 0 not in list
