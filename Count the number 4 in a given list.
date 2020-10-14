@@ -1,0 +1,12 @@
+ Count the number 4 in a given list.
+ 
+ lst = [1,2,3,4,3,4,4,1,4,4,4]
+
+count = 0
+for i in lst:
+    if i == 4:
+        count += 1
+
+print(f"Number of 4 in list : {count}")
+
+Number of 4 in list : 6
