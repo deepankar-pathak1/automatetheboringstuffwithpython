@@ -1,0 +1,12 @@
+Write a Python program to get the n (non-negative integer) copies of the first 2 characters of a given string. 
+Return the n copies of the whole string if the length is less than 2.
+
+a = input("Enter String : ")
+
+if len(a) <= 2:
+    print(2 * a)
+else:
+    print("First Two Char is ",a[0:2] * 2)
+    
+Enter String : dee
+First Two Char is  dede
