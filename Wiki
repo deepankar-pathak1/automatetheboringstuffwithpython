@@ -1,0 +1,16 @@
+text = 'Lists of animals\nLists of aquarium life\nLists of biologists by author abbreviation\nLists of cultivars'
+
+line = text.split('\n')
+# print(line)
+for i in range(len(line)):
+    line[i] = "*" + line[i]
+# print(line)
+
+text = '\n'.join(line)
+print(text)
+
+
+*Lists of animals
+*Lists of aquarium life
+*Lists of biologists by author abbreviation
+*Lists of cultivars
