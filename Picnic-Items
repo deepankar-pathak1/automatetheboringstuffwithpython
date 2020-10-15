@@ -1,0 +1,16 @@
+def printPicnic(dict,leftwidth,rightwidth):
+    print("PICNIC ITEMS".center(leftwidth+rightwidth,"*"))
+    for k,v in dict.items():
+        print(k.ljust(leftwidth,">")+str(v).rjust(rightwidth))
+    print("PICNIC TIME :) ")
+
+picnicItems = {'sandwiches': 4, 'apples': 12, 'cups': 4, 'cookies': 8000}
+printPicnic(picnicItems,12,5)
+
+
+***PICNIC ITEMS**
+sandwiches>>    4
+apples>>>>>>   12
+cups>>>>>>>>    4
+cookies>>>>> 8000
+PICNIC TIME :) 
