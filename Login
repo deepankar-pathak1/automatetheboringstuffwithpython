@@ -1,0 +1,14 @@
+print("WELCOME TO GAME")
+while True:
+    age = input("Enter Age : ")
+    if age.isdecimal():
+        break
+    print("Enter Valid Age ")
+
+while True:
+    passw = input("Enter Password : ")
+    if passw.isalnum():
+        break
+    print("Enter Numeric or Text Password")
+
+print("You Can Access")
