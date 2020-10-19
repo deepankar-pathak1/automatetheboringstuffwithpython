@@ -15,3 +15,19 @@
 # String Replication
 
 print("Deepankar " * 3)
+
+
+# User Input
+# Use input function
+# It always Take input In String Format.
+# name = input("Type Your Name : ")
+# print("Hello" + name)
+
+# Type Your Name : Deepankar
+# Deepankar
+
+# age = input("Age is : ")
+# # print(type(age))
+# 
+# # Age is : 55
+# # <class 'str'>
