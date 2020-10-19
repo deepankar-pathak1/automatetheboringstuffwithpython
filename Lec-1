@@ -1,0 +1,25 @@
+# lecture 1
+
+print("Hello")
+print('hello')
+print("Hello 'hello Hello")
+# print('Hell'o ') syntax Error
+
+Lecture 2
+
+# escape sequence
+# print("Hello "World" ") # Eroor
+# print("Hello \"World\" World") #backslash is Escape Sequnence
+# # print('i'm Deepankar ') # error
+# print('i\'m Deepankar ')
+#
+# print("This is")
+# print("Line 2")
+# print("This is line 3")
+# print()
+# print("This is\nLine 2\nthis is line 3")
+# print()
+# print("This\tis\tDeepankar")
+# print("This is Backslash\") Error
+print("This is Backslash\\")
+print("Hell\blo") # it will remove one l 
