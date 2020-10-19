@@ -19,3 +19,8 @@
 # print("he is\t is Awesome")
 # Output :  \" \n\t\ \'
 # print(" \\\" \\n\\t\\ \\' ")
+
+
+# Raw string
+
+# print(r"Line A\n Line B") # r is used to treat them as normal text
