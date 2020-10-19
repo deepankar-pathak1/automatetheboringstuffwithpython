@@ -1,0 +1,21 @@
+# This is Comment
+# shortcut for comment in pycharm is Cntrl+/
+
+
+# Escape Sequnece as Normal Text
+
+# Output : Line A \n Line b
+
+# print("Line A \n Line B")
+# print("Line A \\n Line B") # It will Give Correct Output
+
+# output : \" \'
+# print("\" \'") # Not Correct
+# print(" \\\" \\\' ") # Correct Output
+
+
+# print("This is \\\ Double backslash")
+# print("This is /\/\/\/\/\ Mountain")
+# print("he is\t is Awesome")
+# Output :  \" \n\t\ \'
+# print(" \\\" \\n\\t\\ \\' ")
