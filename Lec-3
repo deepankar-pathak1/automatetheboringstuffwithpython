@@ -1,0 +1,21 @@
+# Variable
+
+# n = 2
+# print(n)
+# n = 6
+# print(n)
+# name = "Deepankar"
+# print(name)
+# # Dyanamic Programming Language
+# name = 123
+# print(name)
+
+# Rules
+# variable cannot be start with number
+# 1 = "Deepankar"
+# Can start with letter or _
+# Cannot use Special symbol at starting or in middle
+#
+# username = "Deepu" # Dont use like this
+# user_name = "Deepu" # use Like this, this is called Snake Case Writting
+# userName = "Deepu" Camel Case Writting use in Java
