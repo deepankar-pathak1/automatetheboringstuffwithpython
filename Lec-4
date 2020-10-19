@@ -1,0 +1,17 @@
+# String
+# name = "Deepankar"
+# last = " Pathak"
+# full_name = name + last
+# print(full_name)
+
+# string cannot be added with number.
+# string can only be added with string.
+
+# print("Deepankar" + 1) This will show Error
+# print("Deepankar" + str(1)) # No Error
+
+# print("Deepu" + "1")
+
+# String Replication
+
+print("Deepankar " * 3)
