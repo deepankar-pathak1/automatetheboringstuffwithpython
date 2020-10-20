@@ -1,0 +1,24 @@
+ # string indexing
+
+lang = "Pyhton"
+
+ # postion(index number )
+ # Indexing start from 0
+
+# lang[start:end:step]
+
+# Note : End is not included
+
+print(lang[0]) # it will print 1 letter
+
+print(lang[:]) # it will print full
+
+print(lang[-1]) # last index
+
+print(lang[1::2]) # start from 1 and jump of 2(step 2)
+
+
+# in depth of step argument
+print("Deepankar"[0:8:2]) #Start from 0, End at 7(8-1) and Step of 2
+print("Deepankar"[0:8:1])
+print("Deepankar"[8::-1]) # Start from index (8) and End at Index at (1).
