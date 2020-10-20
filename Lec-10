@@ -37,3 +37,16 @@ print(name.center(l+4,"*"))
 
 Name Please :) Deepankar
 **Deepankar**
+
+
+# string are Immutable
+# it means its Charcater cannot be changed
+name = "String"
+name[0] = "T"
+print(name) # it will show error
+
+name = "String"
+# name.replace("S","T")
+# print(name)
+# 
+# # String # String will remain same
