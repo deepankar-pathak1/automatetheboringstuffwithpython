@@ -1,0 +1,32 @@
+# String Formating.
+name = "Deepankar"
+last = "Pathak"
+
+print(f"hey {name} {last}") #pyhton 3.6
+print("hey {} {}".format(name,last)) # pyhton 3
+
+hey Deepankar Pathak
+hey Deepankar Pathak
+
+# some Practice stuff
+
+n1 = int(input("Number 1 : "))
+n2 = int(input("Number 2 : "))
+n3 = int(input("Number 3 : "))
+
+n4 = (n1+n2+n3)/3
+print(f"Average of {n1},{n2},{n3} is {n4}")
+
+Number 1 : 10
+Number 2 : 10
+Number 3 : 10
+Average of 10,10,10 is 10.0
+
+
+n1,n2,n3 = input("Enter Number 1,2,3 by Comma : ").split()
+n1,n2,n3 = int(n1),int(n2),int(n3)
+n4 = (n1+n2+n3)/3
+print(f"Average of {n1},{n2},{n3} is {n4}")
+
+Enter Number 1,2,3 by Comma : 10 10 10
+Average of 10,10,10 is 10.0
