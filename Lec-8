@@ -30,3 +30,12 @@ Name is : Deepankar
 Check Letter Count : e
 Length of this word is 9
 Word Deepankar has e word 2 times.
+
+
+name,ch = input("Enter Name and Letter to count Seprated by , : ").split(",")
+# here we have Case insensitive letter means it will count E and e
+# name.lower().count(ch.lower()) = convert name in lower and count 
+print(f"Name is {name} and Letter {ch} is {name.lower().count(ch.lower())}")
+
+Enter Name and Letter to count Seprated by , : DEeEeEEeee,e
+Name is DEeEeEEeee and Letter e is 9
