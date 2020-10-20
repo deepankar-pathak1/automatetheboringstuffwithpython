@@ -22,3 +22,14 @@ print(lang[1::2]) # start from 1 and jump of 2(step 2)
 print("Deepankar"[0:8:2]) #Start from 0, End at 7(8-1) and Step of 2
 print("Deepankar"[0:8:1])
 print("Deepankar"[8::-1]) # Start from index (8) and End at Index at (1).
+
+
+Some Quiz Stuff.
+
+name = input("Enter Name : ")
+print(f"Name in Original Order {name}")
+print(f"Name in reverse order {name[::-1]}")
+
+Enter Name : Deepankar
+Name in Original Order Deepankar
+Name in reverse order raknapeeD
