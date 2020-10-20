@@ -1,0 +1,32 @@
+# String method
+
+name = "Deepankar Pathak"
+
+print(len(name)) # len is used to calculate letter in this variable
+# len also count spaces
+# len is function
+
+print(name.lower())
+# lower is method
+
+print(name.upper())
+# upper is method
+
+print(name.title())
+# title is method
+# it capital only 1 st letter and all will be in small letter
+
+print(name.count("e"))
+# calcuate how many e is present in name variable 
+
+# Some Quiz 
+
+name = input("Name is : ")
+ch = input("Check Letter Count : ")
+print(f"Length of this word is {len(name)}")
+print(f"Word {name} has {ch} word {name.count(ch)} times.")
+
+Name is : Deepankar
+Check Letter Count : e
+Length of this word is 9
+Word Deepankar has e word 2 times.
