@@ -1,0 +1,44 @@
+ int()
+
+# Enter Number One : 4
+# Enter Number Two : 4
+# Total is 44
+# Becuase input take input as "string" 
+# a = int(input("Enter Number One : "))
+# b = int(input("Enter Number Two : "))
+# c = a + b
+# print("Total is ",c)
+#
+# Enter Number One : 4
+# Enter Number Two : 4
+# Total is  8
+
+# int()
+# float()
+# str()
+
+
+# Variable some more stuff
+# how to declare more variable in one line
+
+name,age = "Deepankar",24
+print(name,age)
+print("Hey " + name + "Your Age is " + str(age))
+x = y = z = 1
+print(x,y,z)
+
+
+#how to take more than one input single time
+# name = input("Name : ")
+# age = input("age : ")
+# print(name, age )
+
+# how can we do this in single line.
+
+# name,age = input("Enter Name and AGe : ").split()
+
+# with the help of split we are splitting name and age variable with help of space
+# space must be in between
+# here we have changed space with ","
+name,age = input("Enter Name and AGe : ").split(",")
+print(name, age)
