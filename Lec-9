@@ -1,0 +1,28 @@
+# strip method
+
+# name = "    Deepankar     "
+# check = "$$$$$"
+# print(name.lstrip() + check) # remove left space
+# print(name.rstrip() + check) # reomove right space
+# print(name.strip() + check)
+#
+# name_1 = "Dee EE Pankar"
+# print(name_1.strip()) # it will not remove space present between the letters.
+# #to remove this replace it with
+# print(name.replace(" ","")) #here space will remove.
+
+# Give input as name and Char and count char in name
+# if by chance space is present it may encounter problem like.
+name,char = input("name and letter seprated by , : ").split(",")
+print(len(name))
+print(len(char))
+# name and letter seprated by , : Deepankar, D
+# 9
+# 2
+# here we have one letter but it is showing 2 Due to space to avoid this we can use strip
+# name.strip().lower() ---> space is removed and name is converted in lower case
+# char.strip().lower() --> same for char
+
+print(f"Name is {name} and Letter is {char},Letter is Repeated {name.strip().lower().count(char.strip().lower())}")
+
+Name is Dee  and Letter is  e,Letter is Repeated 2
