@@ -1,0 +1,39 @@
+# replace() and find() method
+
+# name = "Deepankar is Going to be Rich :) "
+# print(name.replace("is Going","is Growing"))
+# print(name.replace(" ","_"))
+#
+# print(name.find("is")) # it will the position of is
+
+# na = "Hey How Hey How are you?"
+# print(na.find("Hey")) # it will find from starting
+#
+# print(na.find("Hey",2)) # it will find after position 2
+
+string = "hey how are you ? are you ok ?"
+# task : - find position of 2nd are
+re = string.find("are")
+print(string.find("are",re)) # it will find first are
+print(string.find("are",re + 1)) # it will find second are
+
+# 8
+# 18
+
+
+
+
+# center() method
+
+# name = "$$$$DEEPANKAR$$$$" # Output we want
+# name = "DEEPANKAR"
+# print(len(name))
+# print(name.center(17,"$"))
+
+# we want to add star 2 in R and 2 in L
+name = input("Name Please :) ")
+l = len(name)
+print(name.center(l+4,"*"))
+
+Name Please :) Deepankar
+**Deepankar**
