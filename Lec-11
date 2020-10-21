@@ -1,0 +1,24 @@
+# if condition
+age = int(input("Age : "))
+
+if age >= 14:
+    print("You are above 14")
+else:
+    print("Not Above ")
+    
+    
+# pass statement
+x = 5
+if x > 18:
+    # if you dont type anything here it will show error
+    # to avoid this we use pass
+    pass
+    
+    
+# else
+a = int(input("Number : "))
+
+if a >10:
+    print("Greater than 10")
+else:
+    print("Not Greater than 10")
