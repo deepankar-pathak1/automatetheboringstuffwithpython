@@ -1,0 +1,43 @@
+# exercise
+
+# ask user a number and calculate sum of natural number
+
+# nu = 1
+# en = int(input("Number range END : "))
+# total = 0
+# while nu <= en:
+#     total = total + nu
+#     nu = nu + 1
+# print(f"Sum of Number in range 1 to {en} is {total}")
+
+
+
+i = 0
+a = input("Enter Number : ")
+b = int(len(a))
+total = 0
+
+# print(b)
+
+while i < b:
+    total += int(a[i])
+    # print(i)
+    i = i + 1
+print(total)
+
+
+
+Important Example 
+
+
+i = 0
+c = ""
+
+name = input("Name is : ")
+
+while i < len(name):
+    if name[i] not in c:
+
+        c += name[i]
+        print(f"{name[i]} : {name.count(name[i])}")
+    i = i +1
