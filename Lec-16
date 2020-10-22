@@ -33,3 +33,20 @@ print(f"Number is : {a} and Sum is : {total}")
 
 Enter Number : 1256
 Number is : 1256 and Sum is : 14
+
+name = input("Name : ")
+c = ""
+
+for i in range(0,len(name)):
+    if name[i] not in c:
+        c += name[i]
+        print(f"{name[i]} : {name.count(name[i])}")
+        
+        
+        
+D : 4
+e : 4
+E : 1
+p : 1
+
+
