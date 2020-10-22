@@ -1,0 +1,29 @@
+# and or
+# and if both condition is true than we use and
+name = 'abc'
+age = 19
+# if name =='abc' and age == 19:
+#     print("Condition True")
+# else:
+#     print("Condition False")
+
+# or of one condition is true we use or
+#
+if name =='abcd' or age == 19:
+    print("Condition True")
+else:
+    print("Condition False")
+    
+    
+
+*** EXERCISE ***
+
+user = input("Enter Name : ")
+age = int(input("Age : "))
+
+a = user.lower()
+
+if a.startswith("a") and age > 10:
+    print("You can watch Movie")
+else:
+    print("Sorry you cannot watch movie")
