@@ -46,7 +46,7 @@ while i < len(name):
 
 # infinite loop
 i = 0
-while i <= 10:
+while i <= 10:  # 1 to 9
     print("hello World")
     
     
