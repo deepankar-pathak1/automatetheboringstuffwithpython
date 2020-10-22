@@ -20,3 +20,16 @@ for i in range(1,n+1):
     total += i
 
 print(f"Total Number in Range 1 To {n} : {total}")
+
+
+a = input("Enter Number : ")
+total = 0
+b = len(a)
+
+for i in range(0,b):
+    total = total + int(a[i])
+print(f"Number is : {a} and Sum is : {total}")
+
+
+Enter Number : 1256
+Number is : 1256 and Sum is : 14
