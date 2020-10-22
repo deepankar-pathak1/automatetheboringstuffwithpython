@@ -27,3 +27,15 @@ if a.startswith("a") and age > 10:
     print("You can watch Movie")
 else:
     print("Sorry you cannot watch movie")
+
+
+
+if - elif - else
+
+price = int(input("Enter Price : "))
+if price >= 1 and price <= 3:
+    print("Free")
+elif price >=4 and price <= 10:
+    print("Price : 150")
+elif price >= 11 and price <= 60:
+    print("Price : 250")
