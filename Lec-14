@@ -1,0 +1,39 @@
+# keyword
+name = "Deepankar"
+
+if "D" in name:
+    print("Present in name")
+else:
+    print("Not in name")
+    
+    
+    
+# check empty or not
+# name = "abc"
+name = ""
+if name: # true if string is not empty
+    print("string is not empty")
+else:
+    print("String is empty")
+    
+  
+ 
+# while loops
+# print("Hello") # 10 times
+i = 1
+# print(i)
+while i <= 10:
+    # print(i) # for checking 
+    print("Hello world")
+    i = i + 1
+    
+    
+    #  sum : 1 to 10 
+# i = 1
+# sum = 0
+# 
+# while i < 11:
+#     sum = sum + i
+#     print(f"Sum in Sequence {i} : {sum}")
+#     i = i +1
+# print(f"Final Sum is : {sum}")
