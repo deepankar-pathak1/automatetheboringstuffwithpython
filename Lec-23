@@ -75,3 +75,11 @@ print(lst)
 
 lst.remove('apple')
 print(lst)
+
+
+lst = ['apple', 'Grapes', 'Mango', 'Orange']
+
+if "apple" in lst:
+    print("Present")
+else:
+    print("Not Present")
