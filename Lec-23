@@ -1,0 +1,77 @@
+# List : ordered Collection of item
+# List Create using Square Bracket []
+
+nu = [1,2,3]
+print(nu)
+
+wo = ["Name","Deepankar"]
+print(wo)
+
+mix = [1,2.3,"DEE",None]
+print(mix)
+
+# Element access
+print(nu[1])
+#slicing
+print(wo[:])
+
+# we can change list
+
+mix[1] = ["One"]
+print(mix)
+
+
+[1, 2, 3]
+['Name', 'Deepankar']
+[1, 2.3, 'DEE', None]
+2
+['Name', 'Deepankar']
+[1, ['One'], 'DEE', None]
+
+Process finished with exit code 0
+
+
+
+name = ["Deepu"]
+# name.append("Pathak") # append always add item in last
+# print(name)
+# 
+# ['Deepu', 'Pathak']
+
+
+
+
+# fruit = ["apple","Grapes"]
+# 
+# fruit.insert(1,"Lichi") # insert will element where we want 
+# print(fruit)
+
+# ['apple', 'Lichi', 'Grapes']
+
+
+ # we can also add two list with the help of + or wit concatenate
+ 
+ fruit_2 = ["Mango","Orange"]
+
+fruit.extend(fruit_2) #extend will add element to another element in same list
+print(fruit)
+['apple', 'Grapes', 'Mango', 'Orange']
+
+
+
+# Deelet Data From list
+lst = ['apple', 'Grapes', 'Mango', 'Orange']
+# lst.pop() # POP will remove last Element from the list
+# print(lst)
+lst.pop(2) # delete element from index 2
+print(lst) # mango will remove from the list
+
+
+# del lst[1] # delete from index 1
+print(lst)
+
+
+# remove
+
+lst.remove('apple')
+print(lst)
