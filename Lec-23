@@ -83,3 +83,42 @@ if "apple" in lst:
     print("Present")
 else:
     print("Not Present")
+
+
+# # some method of list
+# # count, sort method, sorted function , reverse , clear, copy
+# 
+# lst = ["ziz",'apple', 'Grapes', 'Mango', 'Orange']
+# print(lst.count("apple"))
+# lst.sort() # first camel case than lower case
+# print(lst)
+
+
+print(sorted(lst)) # it only print sorted list
+
+
+# list Comparison
+# ==, is
+lst = ["ziz",'apple', 'Grapes', 'Mango', 'Orange']
+lst_1 = ["ok",'apple', 'Grapes', 'Mango', 'Orange']
+print(lst==lst_1) #False
+
+
+lst = ["ok",'apple', 'Grapes', 'Mango', 'Orange']
+lst_1 = ["ok",'apple', 'Grapes', 'Mango', 'Orange']
+print(lst==lst_1) #True
+print(lst is lst_1) # False Because is check memory location of both the list is same or not 
+
+
+
+
+# # split method
+# 
+# name = "Deepankar Pathak"
+# a = name.split(" ") # it will split list and make it as list 
+# print(a)
+
+
+
+
+
