@@ -1,0 +1,37 @@
+# Variable scope
+#
+# def func():
+#     x = 7 # Local Variable
+#     return x
+#
+# # print(x) # we cannot call x out of this function because x is called inside the Function
+#
+#
+#
+# x = 5 # Global Variable
+# def func_1():
+#     x = 7 # Local Variable
+#     return x
+#
+#
+# print(func_1())
+# print(x)
+#
+# # Output : 7 5
+
+x = 6 # Global Variable
+def func_3():
+    # x = 10 # Local variable
+    global x # Gloabl Varibale
+    x = 10
+    return x
+
+print(func_3())
+print(x)
+
+# OUTPUT : 10 , 10
+
+print(x)
+print(func_3())
+
+# OUTPUT : 6 , 10
