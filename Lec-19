@@ -1,0 +1,106 @@
+#
+# # function
+# def add(x,y):
+#     # z = x + y
+#     # print(z)
+#
+    # return x +y
+#
+# print(add(4,3))
+
+
+# def muli(x,y):
+#     return x * y
+# a = int(input("Number 1 : "))
+# b = int(input("Number 2 : "))
+# mul = muli(a,b)
+# print(mul)
+
+# print and return
+
+def add_three(a,b,c):
+    return a + b +c
+# add_three(5,5,5)
+print(add_three(5,5,5))
+
+
+def add_three(a,b,c):
+    print(a + b +c)
+add_three(5,5,5)
+# print(add_three(5,5,5))
+
+
+
+# practice of function
+
+# here we want to print last char of string.
+name = input("Name : ")
+def lst_char(x):
+
+    return x[-1]
+print(lst_char(name))
+
+
+
+
+
+x = int(input("Number : "))
+
+def odd_even(x):
+    if x % 2 == 0:
+        print(f"Even Number {x}")
+    else:
+        print(f"Odd Number {x}")
+
+odd_even(x)
+
+
+
+
+# in short Odd-Even
+
+x = int(input("Number : "))
+def odd_even(x):
+    if x % 2 == 0:
+        return "Even"
+    return "Odd"
+
+print(odd_even(x))
+
+
+
+
+# # Return Me a boolean value if Its Even
+# 
+# def even(num):
+#     if num % 2 == 0:
+#         return True
+#     return False
+# 
+# print(even(6))
+
+
+
+
+# 
+# def is_even(num):
+#     return num % 2 == 0 # Return True if even
+# 
+# print(is_even(6))
+
+
+
+
+x = int(input("Number 1 : "))
+y = int(input("Number 2 : "))
+
+def greater(a,b):
+    if a > b:
+        return a
+    elif b > a:
+        return b
+    else:
+        print("Valid Number ")
+
+print(f"Greater {greater(x,y)}")
+
