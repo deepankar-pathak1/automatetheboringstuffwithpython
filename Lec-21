@@ -1,0 +1,39 @@
+# Default Parametrs
+
+
+# def name(f_name,l_name,age):
+# #     print(f"First Name : {f_name}")
+# #     print(f"Last Name : {l_name}")
+# #     print(f"Age : {age}")
+# 
+# # name("deepankar","pathak",25)
+# # if i dont pass age than it will show me an error
+# # name("Deepankar","Pathak") # it will show error
+# 
+
+
+# # to overcome this we pass default parametrs
+# 
+# def name(f_name,l_name,age=25):
+#     print(f"First Name : {f_name}")
+#     print(f"Last Name : {l_name}")
+#     print(f"Age : {age}")
+# name("Deepankar","Pathak") # It will not show error
+# # we can rewrite age also
+# name("Deepankar","Pathak",30)
+
+
+
+# NOTE : Default Parametrs should be in last only
+# You cannot do this
+
+# Below this code will show an error
+
+# def name(f_name,l_name="Unknown",age):
+#     print(f"First Name : {f_name}")
+#     print(f"Last Name : {l_name}")
+#     print(f"Age : {age}")
+# 
+# 
+# 
+# name("Deepankar",55)
