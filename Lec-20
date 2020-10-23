@@ -68,3 +68,22 @@ print(is_palindrome(name))
 
 
 
+
+
+# Fibonacci series Clearly explained
+n = int(input("Enter Number : "))
+def fibonacci(n):
+    # n = int(input("Enter Number : "))
+    x = 0
+    y = 1
+    z = 0
+
+    while (z<=n):
+        print(z,end=" ")
+        x = y
+        y = z
+        z = x + y
+
+fibonacci(n)
+
+
