@@ -1,0 +1,70 @@
+# x = int(input("Number 1 : "))
+# y = int(input("Number 2 : "))
+# z = int(input("Number 3 : "))
+# 
+# # def greatest(a,b,c):
+# #     if x > y > z or x > z > y:
+# #         print(x)
+# #     elif y>z>x or y>x>z:
+# #         print(y)
+# #     elif z>y>x or z>x>y:
+# #         print(z)
+# #     else:
+# #         print("INPUT MUST BE VALID")
+# # greatest(x,y,z)
+# 
+
+
+
+# # we can also write as
+# 
+# def great(a,b,c):
+#     if a>b and a>c:
+#         return a
+#     elif b> a and b>c:
+#         return b
+#     else:
+#         return c
+# 
+# print(f"Greatest Number {great(x,y,z)}")
+
+
+
+
+# Function inside Function
+
+def graeter(a,b):
+    if a > b:
+        return a
+    else:
+        return b
+
+def new_greatest(a,b,c):
+    big = graeter(a,b)
+    return graeter(big,c)
+
+print(new_greatest(10,20000,30))
+
+
+
+
+
+# create a program of palindrome
+# palindrome example : madam --- >>> madam
+
+name = input("Name : ")
+
+# print(name[::]) # Logic
+# print(name[int(len(name))::-1])
+
+def is_palindrome(x):
+    b = int(len(x))
+    if x[::] == x[b::-1]:
+        return True
+    return False
+
+print(is_palindrome(name))
+
+
+
+
