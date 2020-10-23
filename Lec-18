@@ -1,0 +1,38 @@
+# step argument in range
+# for i in range(1,11,2): # it will take step of 2
+#     print(i,end=" ")
+#
+
+
+# print number inn reverse order
+# for i in range(10,0,-1):
+#     print(i,end=" ")
+
+10 9 8 7 6 5 4 3 2 1
+
+
+# for loop in string
+
+# name = "Deepankar"
+# for i in range(len(name)):
+#     print(name[i],end=" ")
+# # for i in name:
+# #     print(i,end=" ")
+
+
+
+# number = input("Enter Number : ")
+# a = 0
+# for i in range(len(number)):
+#
+#     a += int(number[i])
+# print(f"Sum of Number {number} is {a}")
+
+
+
+number = input("Number : ")
+total = 0
+for i in number:
+    total += int(i)
+
+print(f"sum of Number {number} is {total}")
