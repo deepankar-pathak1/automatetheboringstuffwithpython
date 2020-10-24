@@ -1,0 +1,64 @@
+# list vs Array
+# array can only store one data type
+# list : can store any data type
+# string are immutable : we cannot change in strinh which we have declared
+# s = "string"
+# print(s.title()) #String
+# print(s) #string
+# t = s.title()
+# print(t) #String
+# # list are immutable
+#
+
+
+
+# loop inside list
+#
+# f = ["apple","mango","orange"]
+# # for i in f:
+# #     print(i)
+
+
+# i = 0
+# while i < len(f):
+#     print(f[i])
+#     i = i + 1
+
+
+
+# list inside list
+
+matrix = [[1,2,3],[4,5,6,],[7,8,9]] # 2-d List
+
+# for i in matrix:
+#     for j in i:
+#         print(j,end=" ")
+
+# print(matrix[1][1])
+
+print(type(matrix))
+
+
+
+# list genrate with range function
+
+number = list(range(1,11))
+# print(number)
+# print(number.pop()) # 10
+# print(number) #[1, 2, 3, 4, 5, 6, 7, 8, 9]
+# print(number.index(2)) # 1
+number_2 = [1, 2, 3, 4, 5, 6, 7, 8, 9,1]
+# print(number_2.index(1)) # 0
+# print(number_2.index(1,3)) # it will start searching after index 3 # 9
+
+# we will get negative number of list
+def negative(x):
+    negat = []
+    for i in x:
+        negat.append(-i)
+    return negat
+
+print(negative(number_2))
+
+
+
