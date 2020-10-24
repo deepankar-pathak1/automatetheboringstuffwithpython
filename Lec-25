@@ -1,0 +1,55 @@
+# function to sqaure number from given a list
+
+# 
+# number = [1,2,3,4,5,6]
+# 
+# def sqauer(n):
+#     s = []
+#     for i in n:
+#         s.append(i**2)
+#     return s
+# 
+# 
+# print(sqauer(number)) 
+# 
+# # [1, 4, 9, 16, 25, 36]
+
+
+
+# # def reverse(x):
+# #     s = []
+# #     s.append(x[::-1])
+# #     print(s)
+# #     # print(x[::-1])
+# 
+# # no = [1, 4, 9, 16, 25, 36]
+# # reverse(no)
+# 
+# # same thing we can use with append and pop method
+# 
+# def reverse_list(x):
+#     r_list = []
+#     for i in range(len(x)):
+#         poped = x.pop()
+#         r_list.append(poped)
+#     return r_list
+# 
+# no = [1, 4, 9, 16, 25, 36]
+# print(reverse_list(no))
+# 
+
+
+
+# name = ['abc','xyz']
+# def items_reverse(x):
+#    s = []
+#    for i in x:
+#        t = i[::-1]
+#        s.append(t)
+#    print(s)
+# 
+# # ['cba', 'zyx']
+# 
+# items_reverse(name)
+
+
