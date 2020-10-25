@@ -1,0 +1,32 @@
+# # max and min
+# 
+# 
+# num = [6,20,8]
+# print(min(num)) # 6
+# print(max(num)) # 20
+# 
+# # create a function which will return Greatest Difference
+# 
+# def great_diff(x):
+# 
+#     print(f"Greatest Difference Number is : {max(num) - min(num)}")
+# 
+# great_diff(num)
+
+
+
+# # Write a funtion to calculate Number of list
+# 
+# lst = [1,2,[5,6], [3,4],[9,10]]
+# 
+# def sublist_counter(x):
+#     # print(len(x))
+#     # print(type(x))
+#     count = 0
+#     for i in x:
+#         if type(i) == list:
+#             count += 1
+#     return count
+# 
+# 
+# print(sublist_counter(lst))
