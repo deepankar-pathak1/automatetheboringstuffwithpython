@@ -1,0 +1,55 @@
+
+# tuple data structure
+# tuple can store any data type
+# most important tuples are immutable, once tuple is Created you can't update
+
+
+# example = ('one','two','three')
+# #no append, no insert , no pop, no remove
+# # tuples are faste than list
+#
+# days = ('Monday')
+# print(days)
+
+# method
+# count, index
+# len function
+# slicing
+# once tuple is declared it cannot be changed
+
+# looping with tuple
+# mix = (1,2,3)
+# for i in mix:
+#     print(i)
+# # for and while both can be apply
+#
+# # tuple with one element
+# m = (1)
+# print(type(m))
+# n = (1,)
+# print(type(n))
+#
+# <class 'int'>
+# <class 'tuple'>
+
+# tuple unpacking
+
+# guitar = ("deepu","pathak")
+# guitar1, guitar2 = (guitar)
+# print(guitar1)
+# print(guitar2)
+
+# list inside tuples
+#
+# lst = ("name",["what","name"])
+# print(lst)
+# lst[1].pop() # as we have list we can perform this operations
+# print(lst)
+
+# we can do min(), max(), sum
+
+
+
+
+
+
