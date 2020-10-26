@@ -1,0 +1,113 @@
+
+# Add and delete Data from dict
+
+some = {
+    'Name':'Unkown',
+    'age':26
+}
+
+
+# how to add data
+#
+some["songs"] = ["s1","s2"]
+# print(some)
+
+# pop method
+
+# in pop method minimum You have to pass one arguments
+
+remoed = some.pop('songs')
+print(remoed)
+print(some)
+
+# pop item method
+# it is used when You want to remove randomly any key value pair
+popped_item = some.popitem()
+print(popped_item)
+print(type(popped_item))
+print(some)
+
+
+
+
+some = {
+    'Name':'Unkown',
+    'age':26
+}
+
+one = {'State':'Rajasthan','Hobbies':['Lets Crack']}
+
+some.update(one)
+print(some)
+
+{'Name': 'Unkown', 'age': 26, 'State': 'Rajasthan', 'Hobbies': ['Lets Crack']}
+
+
+
+
+# fromkeys
+
+# d = {'name':'Unknown','age':'Unknown'}
+
+# we can do this task same as from keys
+
+d = dict.fromkeys(['name','age','Height'],'Unknown')
+print(d)
+
+
+{'name': 'Unknown', 'age': 'Unknown', 'Height': 'Unknown'}
+
+
+Here we can pass tuple also inplace of list, as code shown below
+
+d = dict.fromkeys(('name','age','Height'),'Unknown')
+print(d)
+
+{'name': 'Unknown', 'age': 'Unknown', 'Height': 'Unknown'}
+
+
+
+ get method
+d = {'name':'Unknown','age':'Unknown'}
+# print(d['names']) # it will show an error because we dont have key of name names
+# so to avoid this we use get method
+
+# print(d.get('names')) # here it will not show any error it will give o/p as None
+# print(d.get('name')) #Unknown
+
+if d.get('name'):
+    print("Present")
+else:
+    print("Not Present")
+
+# O/P : Present
+# clear and copy method
+
+# d.clear()
+# print(d) # {} Dict is Clear
+
+d1 = d.copy() # creating new dict in d1 as it is coppied
+print(d1)
+
+
+
+# Some more about get method.
+
+user = {'Name':'Deepankar','Age':24}
+print(user.get('Name')) #Deepankar
+print(user.get('Names')) # None
+# if Key is not present and we want that it will return something apart from None
+
+print(user.get('Names','Not Found ')) # it will return Not Found
+
+# if we have more than one key of same Name.
+
+user_1 = {'Name':'Deepankar','Age':24,'Age':34}
+
+print(user_1) # age 34
+
+user_2 = {'Name':'Deepankar','Age':34,'Age':24}
+print(user_2) # age 24
+
+
+
