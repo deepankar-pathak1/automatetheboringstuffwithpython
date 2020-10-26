@@ -1,0 +1,56 @@
+CUBE FINDER
+
+n = int(input("Number : "))
+def cube_finder(x):
+    dict = {}
+    for i in range(1,n+1):
+        dict[i] = i ** 3
+    print(dict)
+cube_finder(n)
+
+
+
+WORD COUNTER 
+
+# word counter
+
+name = input("Name : ")
+def word_counter(x):
+
+    count = {}
+
+    for i in x:
+        count[i] = x.count(i)
+    print(count)
+
+
+word_counter(name)
+
+
+
+
+
+user = {}
+n = input("Name : ")
+a = int(input("Age : "))
+fav = input("Movies : ")
+fav_s = input("Songs : ")
+
+user["Name"] = n
+user["Age"] = a
+user["Movies"] = fav
+user["Songs"] = fav_s
+
+# print(user)
+
+for i, j in user.items():
+    print(f"{i}   :   {j}")
+    
+    
+    
+    
+    
+    
+    
+    
+    
