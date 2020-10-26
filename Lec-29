@@ -1,0 +1,70 @@
+# Dictionaries intro
+# unordered collections of data in key : value Pair
+
+user = {'name':'deepankar','age':24}
+# print(user)
+# print(type(user))
+#
+# # second method to create dictionary
+#
+# user_1 = dict(name="Deepankar",age=24)
+# print(user_1)
+# print(type(user_1))
+
+# in dict we cannot do indexing because here we have unordered collections of data.
+# we can access element in dictionary by key and value pair such as
+
+print(user['name']) # deepankar
+
+
+
+# which type of data a dictionary can store
+# any type
+
+# how to add data in empty dict
+
+user_i = {}
+user_i['name'] = 'Deepankar'
+print(user_i)
+
+
+
+
+
+name = {
+    'Name':'Deepankar',
+    'Age':24
+}
+
+# check any key exist in dict
+
+# if 'Name' in name:
+#     print("Present")
+#
+# # check values present in dict
+#
+# if 'Deepankar' in name.values():
+#     print("Yes..")
+#
+#
+#
+ #loops in dict
+# for i in name:
+#
+#     print(i)
+
+# for i in name.keys():
+#     print(i)
+
+# for i in name.values():
+#     print(i)
+
+# Items Method
+
+# for i in name.items():
+#     print(i)
+
+
+# for i in name:
+#     print(name[i])
+
