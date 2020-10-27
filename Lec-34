@@ -1,0 +1,39 @@
+# if else with list comprehension
+
+
+nums = list(range(1,11))
+new_list = []
+print(nums)
+
+for i in nums:
+    if i %2 ==0:
+        new_list.append(i**2)
+    else:
+        new_list.append(-i)
+print(new_list)
+
+
+
+
+ev_od = [i**2 if (i%2==0) else -i for i in nums]
+print(ev_od)
+
+# [-1, 4, -3, 16, -5, 36, -7, 64, -9, 100]
+
+
+
+
+# list comprehension in nested list
+
+ex = [[1,2,3],[1,2,3],[1,2,3]]
+
+nested = [[i for i in range(1,4)] for j in range(3)]
+print(nested)
+
+new_l = []
+
+for i in range(3):
+    new_l.append([1,2,3])
+print(new_l)
+
+# [[1, 2, 3], [1, 2, 3], [1, 2, 3]]
