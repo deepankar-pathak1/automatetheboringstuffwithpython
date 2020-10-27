@@ -1,0 +1,72 @@
+# intro to sets
+
+# unordered collection of unique items
+# does not support indexing
+
+s = {1,1,1,2,3}
+
+print(s) # only unique items
+# {1, 2, 3}
+
+# important task by set
+# l = [1,1,2,3,4,5,5,6,4,7,7,8,9]
+# sets = set(l)
+# print(sets) # all unique items will remove from set
+
+# method for sets
+
+# s.add(5)
+# print(s)
+
+# to remove we use remove method
+# s.remove(1)
+# print(s)
+# {2, 3}
+# if some elements is not present in set and we applied remove method it will show an error
+# s.remove(6) # it will show key error
+# print(s) #
+
+# so to avoid this we use discard method
+
+# s.discard(6) # it will not any error if element is not present in set
+# print(s)
+
+# clear method
+# s.clear() # it will clear my set
+# print(s)
+
+# copy method
+# s1 = s.copy()
+# print(s1)
+
+# in set we cannot store tuple, dictionary, and list.
+
+
+
+# in keyword in sets and loop
+# 
+# # s = {"a","b","c"}
+# 
+# # if "a" in s:
+# #     print("Yes")
+# # else:
+# #     print("no")
+# #
+# # for i in s:
+# #     print(i)
+# 
+# # math in sets
+# # we can perform two main function like Union and Intersection in sets
+# 
+# s = {1,2,3,4}
+# s_2 = {2,3,4,5,6}
+# 
+# # to perform union we use PIE(|)
+# 
+# # union_s = s | s_2
+# # print(union_s)
+# 
+# # to perform intersection we use AND(&)
+# 
+# inter = s & s_2
+# print(inter)
