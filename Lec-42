@@ -1,0 +1,62 @@
+# filter function
+#
+# def is_even(a):
+#     return a%2 == 0
+#
+numb = [1,2,3,4,5,6,7,8]
+#
+# evens = tuple(filter(is_even, numb))
+#
+# print(evens) #(2, 4, 6, 8)
+
+#
+# evens = tuple(filter(lambda a : a%2 ==0 , numb))
+# print(evens)
+
+
+#  as filter is also iterable so we can do this
+
+# evens = filter(lambda a:a%2==0, numb)
+#
+# for i in evens:
+#     print(i)
+
+#by list comprehension
+
+# evens = [i  for i in numb if i%2==0]
+# print(evens)
+
+
+***********************************************************
+
+
+# iterator vs iterable
+
+number = [1,2,3] #iterable
+sqare = map(lambda a:a**2, number) # iterator
+# print(sqare)
+# <map object at 0x000001EF35D37A30>
+
+
+# how does for loop work?
+
+# for i in number:
+#     print(i)
+
+# Step 1 call iter function
+# iter(number)--->> iterator
+# next(iter(numbers))
+
+
+# ***** iterable *****
+
+#
+# num_iter = iter(number)
+# print(next(num_iter)) # 1
+# print(next(num_iter)) # 2
+# print(next(num_iter)) # 3
+#
+
+# **** iterator ****
+
+print(next(sqare)) # 1
