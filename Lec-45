@@ -1,0 +1,26 @@
+ advance min and max function
+# #
+# # lst = [1,2,3,4]
+# # print(max(lst))
+# # print(min(lst))
+# #
+# 
+# # task : we have to find out max length of string
+# 
+# name = ['Deepankar','pathk','av']
+# 
+# # def func(item):
+# #     return len(item)
+# #
+# # print(max(name,key=func)) # Deepankar
+# # print(min(name,key=func)) # av
+# 
+# # print(max(name,key= lambda item : len(item))) # Deepankar
+# 
+# 
+# student =[
+#     {'name': 'deepu' , 'score':90, 'age':24},
+#     {'name' : 'aanshu' , 'score':100,'age':26}
+# ]
+# 
+# print(max(student, key=lambda item: item.get('score')))
