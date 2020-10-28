@@ -1,0 +1,118 @@
+# l = [1,2,3]
+#
+# if l:
+#     print("Not Empty")
+# else:
+#     print(" Empty")
+
+Not Empty
+
+
+
+
+
+def to_power(num, *args):
+#     if args:
+#         return [i**num for i in args]
+#     else:
+#         return "YOU DID't PASS ANY ARGS"
+# 
+# 
+# nums = [1,2,3]
+# print(to_power(2,*nums))
+# 
+# # [1, 4, 9]
+
+
+
+
+
+*******************************************************************
+
+
+
+
+
+
+
+# #Kwargs(keyword Arguments)
+# # **kwargs(double star operator)
+# 
+# # kwargs as a parameter
+# 
+# # def func(**kwargs):
+# #     print(kwargs)
+# #     print(type(kwargs)) #<class 'dict'>
+# #
+# # func(first_name="Deepankar",last_name="Pathak")
+# #
+# # # {'first_name': 'Deepankar', 'last_name': 'Pathak'}
+# #
+# # # basically args on tuples and kwargs on dictionary
+# 
+# # def func_1(**kwargs):
+# #     for k,v in kwargs.items():
+# #         print(f"{k} : {v}")
+# #
+# # func_1(first_name ="Deepankar", last_name = "Pathak")
+# #
+# # # first_name : Deepankar
+# # # last_name : Pathak
+# 
+# # def func_1(name,**kwargs):
+# #     for k,v in kwargs.items():
+# #         print(f"{k} : {v}")
+# #
+# # # func_1(first_name="Deepankar",last_name="Pathak") # it will show error
+# # # becuase we dont have argument for name
+# #
+# # func_1("hey",first_name="Deepankar",last_name="Pathak")
+# 
+# 
+# # Dictionary unpacking
+# 
+# def func_1(**kwargs):
+#     for k,v in kwargs.items():
+#         print(f"{k} : {v}")
+# 
+# d = {'name':'Deepankar','age':25}
+# # func_1(d) # error
+# func_1(**d) # no error same output as above
+# # becuase now dict is unpacked with **kwargs
+
+
+
+
+
+
+
+*********************************************************************
+
+
+
+# order of parameters,*args,default parameters and ** kwargs
+
+# ************** PADK *****************
+# 1) Parameters
+# 2) *args
+# 3) default Parameters
+# 4) **kwargs
+
+
+# def func(name,*args,lst_name = "unknown",**kwargs):
+#     print(name)
+#     print(args)
+#     print(lst_name)
+#     print(kwargs)
+#
+# func('Deepu',1,2,a=1,b=2)
+
+# dont change this order if You are using all 4 Parameters.
+
+
+
+
+
+******************************************************************************
+
+
