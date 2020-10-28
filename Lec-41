@@ -1,0 +1,45 @@
+# map function
+
+# nu = [1,2,3,4]
+#
+# def sqaure(x):
+#     return x **2
+#
+# # print(map(sqaure,nu)) #<map object at 0x0000021E53466A30>
+#
+# # sqa = list(map(sqaure,nu))
+# # print(sqa)  # [1, 4, 9, 16]
+
+# now map with lamda
+
+# nwe = [1, 4, 9, 16]
+#
+# sqaures = list(map(lambda x: x**2, nwe))
+# print(sqaures) #[1, 16, 81, 256]
+
+
+# x = [1, 4, 9, 16]
+# 
+# new = []
+# for i in x:
+#     new.append(i**2)
+# # print(new)    # [1, 16, 81, 256]
+
+
+
+
+
+
+
+
+# basically map function is iterator it means we can apply loop
+
+# names = ['abc','bcd','efg']
+#
+# l = map(len,names)
+# for i in l:
+#     print(i)
+# #
+# # 3
+# # 3
+# 3
