@@ -1,0 +1,47 @@
+
+# Enumerate function
+
+# we use enumerate function with for loop to track position of our item in iterable
+
+# Without enumerate function
+
+# lst = ['abs','xyz']
+# pos = 0
+# for i in lst:
+#     print(f"{pos}>>>{i}")
+#     pos += 1
+
+# 0>>>abs
+# 1>>>xyz
+
+# with enumerate function
+
+# lst = ['abs','xyz']
+# for pos ,name in enumerate(lst):
+#     print(f"{pos}>>>{name}")
+
+# 0>>>abs
+# 1>>>xyz
+
+
+
+
+
+
+
+# def name(x,y):
+#     for i, j in enumerate(x):
+#         if y == j:
+#             return i
+#     else:
+#         return str(-1)
+# print(name(["ram","x","y","Deepankar"],"Deepankar"))
+# # 3
+
+
+
+
+****************************************************************
+
+
+
