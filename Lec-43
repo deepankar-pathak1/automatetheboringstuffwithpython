@@ -1,0 +1,101 @@
+# zip function
+
+# user = ['user1','user2']
+# name = ['Deepankar','Pathak']
+# user_2 = ['user1','user2','user3']
+
+
+# # zip function give zip object which is basically a tuple
+
+
+# # ('user1','Deepankar')....
+
+
+# print(zip(user,name)) #<zip object at 0x000002C2A33AC7C0>
+# print(list(zip(user,name))) # [('user1', 'Deepankar'), ('user2', 'Pathak')]
+
+
+# print(list(zip(user_2,name))) # [('user1', 'Deepankar'), ('user2', 'Pathak')]
+#
+# ex = [('a',1),('b',2)] # this list
+# # which have only two elements and they both are tuples.
+# # we can convert them(list)  into dictionary.
+#
+# print(dict(ex)) # {'a': 1, 'b': 2}
+
+
+
+
+
+user = ['user1','user2']
+name = ['Deepankar','Pathak']
+na_me = ['Deepankarji','Pathakji']
+# print(list(zip(user,name,na_me)))
+# [('user1', 'Deepankar', 'Deepankarji'), ('user2', 'Pathak', 'Pathakji')]
+
+# but we cannot convert them into dictionary
+
+# print(dict(zip(user,name,na_me)))
+# ValueError: dictionary update sequence element #0 has length 3; 2 is required
+
+
+
+
+
+********************************************************************
+
+
+
+
+
+
+
+
+# zip part 2
+
+# l1 = [1,2,3]
+# l2 = [2,4,6]
+
+# print(list(zip(l1,l2)))
+# [(1, 2), (2, 4), (3, 6)]
+
+# but here we want to perform opposite operation
+
+# >>>>>>>>> * opeartor with zip <<<<<<<<<<<<<<<
+# l = [(1, 2), (2, 4), (3, 6)]
+# print(list(zip(*l))) # here tuple will be unpack
+# [(1, 2, 3), (2, 4, 6)]
+
+# l3,l4 = list(zip(*l))
+# print(l3)
+# print(l4)
+
+# (1, 2, 3)
+# (2, 4, 6)
+
+
+l1 = [1,2,3]
+l2 = [2,4,6]
+
+# now we want which number is greater ex : 1 or 2 : 2 and so on..
+new_list = []
+for pair in zip(l1,l2):
+    # print(pair)
+    # (1, 2)
+    # (2, 4)
+    # (3, 6)
+    new_list.append(max(pair))
+print(new_list)
+
+
+# [2, 4, 6]
+
+
+
+
+**********************************************************
+
+
+
+
+
