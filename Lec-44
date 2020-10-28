@@ -1,0 +1,103 @@
+# >>>>>>>>>>>>>>> ADVANCE FUNCTION PRACTICE <<<<<<<<<<<<<<<<<<
+
+
+
+# def average_finder(l1,l2):
+#     average = []
+#     for pair in zip(l1,l2):
+#         average.append(sum(pair)/len(pair))
+#     print(average)
+#
+# average_finder([1,2,3],[4,5,6])
+
+# same code for any number of list
+# we will use *args
+
+# def average_finder(*args):
+#     average = []
+#     for pair in zip(*args): # * args because we want to unpack tuple
+#         average.append(sum(pair)/(len(pair)))
+#     print(average)
+#
+# average_finder([1,2,3],[4,5,6],[7,8,9])
+#
+# # [4.0, 5.0, 6.0]
+
+
+average_finder = lambda *args: [(sum(pair)/len(pair)) for pair in zip(*args)]
+print(average_finder([1,2,3],[4,5,6]))
+
+# [2.5, 3.5, 4.5]
+
+
+
+***********************************************************
+
+
+
+
+# >>>>>>>>>>>>>  any() and all() function <<<<<<<<<<<<<<<
+
+num = [1,2,3,4,5,6,7]
+
+# evens1 = []
+# for i in num:
+#     evens1.append(i%2==0)
+#
+#
+# print(evens1)
+
+# [False, True, False, True, False, True, False]
+
+# all check for all the value if all are True it will return True
+# any check if any value is True it will Return True
+
+
+# print(all([False, True, False, True, False, True, False])) # False
+# print(all([True,True,True])) # True
+#
+# print(any([False, True, False, True, False, True, False])) # True
+#
+
+print(all([i%2 ==0 for i in num])) #False
+
+
+
+
+
+*******************************************************************
+
+
+
+
+
+
+
+
+# >>>>>>>>>>>>>>>> Practise of any and all <<<<<<<<<<<<<
+
+# def my_sum(*args):
+#     total = 0
+#     for num in args:
+#         total += num
+#     return total
+
+# print(my_sum(1,2,3)) # 6
+# print(my_sum(1,2,3,9.9)) # 15.9
+
+# but if we pass a list and som string in function then ...
+
+# print(my_sum(1,2,3,"deepu",[1,2]))
+# TypeError: unsupported operand type(s) for +=: 'int' and 'str'
+
+
+# def my_sum1(*args):
+#     if all([(type(arg) == int or type(arg) == float) for arg in args]):
+#         total = 0
+#         for num in args:
+#             total += num
+#         return total
+#     else:
+#         return "Wrong input"
+#
+# print(my_sum1(1,2,3,"deepu",[1,2]))
