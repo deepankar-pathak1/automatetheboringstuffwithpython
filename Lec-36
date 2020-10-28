@@ -1,0 +1,116 @@
+odd_even = {i:('EVEN' if i %2==0 else 'odd') for i in range(1,11)}
+# 
+# print(odd_even)
+
+# # sets Comprehension
+# #
+# # s = {k**2 for k in range(1,11)}
+# # print(s)
+# 
+# name = ["peepu","deepankar"]
+# frst = {i[0] for i in name}
+# print(frst)
+
+
+
+
+
+
+# # make flexibale function
+# 
+# # *operator
+# # *args
+# 
+# # def total(a,b):
+# #     return a + b
+# # # print(total(3,6))
+# #
+# # # but if we want
+# # print(total(3,6,3)) # it will shown an error
+# # because as described above total will tak Arguments But here we have given more than 2..
+# 
+# # now to SOLVE this WE USE * operator
+# 
+# # def total_solve(*args):
+# #     print(args)
+# #     print(type(args))
+# #
+# # total_solve(1,2,3,4,5,6)
+# #
+# # #(1, 2, 3, 4, 5, 6)
+# # # <class 'tuple'>
+# 
+# 
+# def total(*args):
+#     total = 0
+#     for num in args:
+#         total+= num
+#     return total
+# 
+# print(total(1,2,3,4,5,6,7))
+# # 28
+# # Now here we can give many input as we want because of * operator.
+# 
+# 
+
+
+
+# *args with normal parameter
+
+# def mul(*args):
+#     ma = 1
+#     for i in args:
+#         ma *= i
+#     return ma
+#
+# print(mul(1,2,3,4))
+# 24
+
+
+# now if we pass Two arguments
+# def mul(nums, *args):
+#     ma = 1
+#     print(nums) # num first argumnet # 2
+#     print(args) # it is tuple #(3,4)
+#     for i in args:
+#         ma *= i
+#     return ma
+#
+# print(mul(2,3,4))
+# # 12
+
+
+
+# WE CANNOT DO THIS
+# ****
+
+# def mul(*args,nums):
+#     ma = 1
+#     for i in args:
+#         ma *= i
+#     return ma
+#
+# print(mul(1,2,3,4))
+#
+
+# ****
+
+
+
+
+# *args as arguments
+
+
+# def multi(*args):
+#     mul = 1
+#     print(args)
+#     for i in args:
+#         mul *= i
+#     return mul
+#
+# nums = [2,3,4]
+# # print(multi(nums))
+#
+# # when we want to pass a list with this we have to use as with *
+# # with * it will be unpacked and can be treated as tuple
+# print(multi(*nums)) # 24
