@@ -1,0 +1,26 @@
+EXERCISE ***********
+
+def func(x,reverse=True):
+    if reverse:
+        lst = []
+        for i in x:
+            lst.append(i[0].upper() + str(i[1:]))
+        print(lst)
+    else:
+        lst_1 = []
+        for i in x:
+            lst_1.append(i[::-1].title())
+        print(lst_1)
+
+x = ["deepu","pathak"]
+
+# func(x,reverse=False)
+# ['Upeed', 'Kahtap']
+
+func(x)
+# ['Deepu', 'Pathak']
+
+
+************************************
+
+
