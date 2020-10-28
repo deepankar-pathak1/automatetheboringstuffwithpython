@@ -1,0 +1,69 @@
+# lambda expresion (anonymous function)
+# it is called anonymous because it does not have any name
+
+def add(x,y):
+    return x + y
+
+
+add_2 = lambda a,b : a + b
+print(add(5,5)) # 10
+print(add_2(5,5)) # 10
+
+# lambda is used within built in function like map,reduce..
+
+mul = lambda x,y : x * y
+print(mul(5,5))  # 25
+
+
+***************************************************************
+
+
+
+# def even(a):
+#     if a %2==0:
+#         return True
+#     else:
+#         return False
+#
+# print(even(6)) # True
+
+# is_even = lambda a : a%2==0
+# print(is_even(6)) # True
+
+# def last_char(s):
+#     return s[-1]
+# print(last_char("Deepu")) # u
+#
+# lst_char = lambda s : s[-1]
+# print(last_char("Deepu")) # u
+
+# if else with lambda
+
+# def func(s):
+#     if len(s) > 5:
+#         return True
+#     else:
+#         return False
+#
+# print(func("Deepankar")) # True
+
+
+
+# def func_1(s):
+#     return len(s) > 5
+#
+# print(func_1("Deepankar ")) # True
+
+
+
+# func_2 = lambda s: True if len(s)>5 else False
+# print(func_2("Deepankar")) #True
+
+
+
+*******************************************************
+
+
+
+
+
