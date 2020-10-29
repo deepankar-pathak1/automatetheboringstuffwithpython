@@ -1,0 +1,14 @@
+# what are doc strings
+# how to write docstring
+# how to see docstring
+# what is help function
+
+def add(a,b):
+    '''This is Function add 2 Number '''
+    return a + b
+# print(add(2,3)) # 5
+print(add.__doc__) # used to print docstring
+# This is Function add 2 Number
+
+
+print(help(sum)) # to know about sum we use help
