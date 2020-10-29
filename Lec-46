@@ -1,0 +1,40 @@
+# sort method
+#
+# fruits = ['grapes','mango','apple']
+# fruits.sort()
+# print(fruits) #['apple', 'grapes', 'mango']
+#
+# # sort method is not available for tuples
+#
+# # tuples
+#
+# fruit = ('grapes','apple','mango')
+# print(sorted(fruit)) # ['apple', 'grapes', 'mango']
+#
+# # here we get sorted list
+# print(fruit) #('grapes', 'apple', 'mango')
+# but here sorted does not changed it
+
+
+# similarily we perform same thing with sets
+
+
+# some advance function with sort we have
+
+guitar = [
+    {'model':'yamaha','price':8400},
+    {'model':'faith','price':50000},
+    {'model':'taylor','price':450000}
+]
+
+print(sorted(guitar,key= lambda d:d['price']))
+
+
+
+# [{'model': 'yamaha', 'price': 8400}, {'model': 'faith', 'price': 50000}, {'model': 'taylor', 'price': 450000}]
+
+
+
+
+# print(sorted(guitar,key= lambda d:d['price'],reverse=True))
+# # here we get in DESCENDING order
