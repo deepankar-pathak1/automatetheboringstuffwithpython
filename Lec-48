@@ -1,0 +1,62 @@
+
+# DECORATORS <<<IMPORTANT >>>>
+
+# to understnad decorators we must know about first class function / closures
+# then finally decorators
+
+#
+# def sqaure(x):
+#     return x **2
+# # print(sqaure(4))
+# # s = sqaure()
+#
+#
+# s = sqaure # not called function
+#
+# # print(s(7)) # 49
+# print(sqaure.__name__) # sqaure
+# print(s.__name__) # sqaure
+# #
+#
+
+
+
+**************************************************************************************
+
+
+
+
+# function as argument
+# 
+# # def square(a):
+# #     return a**2
+# #
+# # l = [1,2,3]
+# # print(list(map(square,l))) # [1, 4, 9]
+# 
+# # now here we will create own function with argument.
+# 
+# def my_map(func,iterable):
+#     new_list = []
+#     for item in iterable:
+#         new_list.append(func(item))
+#     return new_list
+# 
+# #
+# # def square(a):
+# #     return a**2
+# #
+# l = [1,2,3]
+# #
+# # print(my_map(square,l)) # [1, 4, 9]
+
+
+
+
+
+
+
+
+
+
+
