@@ -1,0 +1,79 @@
+# SOME PROBLEM WITH DECORATORS
+
+# def decorator_function(any_function):
+#     def wrapper_function():
+#         print("this is awesoem")
+#         any_function()
+#     return wrapper_function
+#
+# # def func1():
+#     print("This is FUNC 1")
+#
+# var = decorator_function(func1)
+# var()
+
+# OUTPUT
+# this is awesoem
+# This is FUNC 1
+
+# But it may caise error if we use as
+
+# @decorator_function
+# def func2(b):
+#     print(f"This isfunction with argumnets {b}")
+#
+# func2 = decorator_function(func2)
+# func2()
+
+
+# TypeError: func2() missing 1 required positional argument: 'b'
+
+# to solve this we must pass this
+
+#
+# def decorator_function(any_function):
+#     def wrapper_function(*args,**kwargs):
+#         print("this is awesoem")
+#         any_function(*args,**kwargs)
+#     return wrapper_function
+
+# @decorator_function
+# def func2(b):
+#     print(f"This is Function with arguments {b}")
+#
+# func2(9)
+
+
+# this is awesome
+# This is Function with arguments 9
+
+# @decorator_function
+# def add(a,b):
+#     return a + b
+
+# add(3,5) # no output
+
+# print(add(3,5)) # None
+
+# None because, here we have called a function any_function()
+# But we didn't Returned it
+
+
+
+
+# def decorator_function(any_function):
+#     def wrapper_function(*args,**kwargs):
+#         print("this is awesoem")
+#         return any_function(*args,**kwargs)
+#     return wrapper_function
+#
+#
+#
+# @decorator_function
+# def add(a,b):
+#     return a + b
+#
+# print(add(3,5))
+#
+# # this is awesoem
+# # 8
