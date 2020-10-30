@@ -1,0 +1,67 @@
+# decorators : -
+# Enhance the functionality of other function
+
+# here we have created Two function
+
+# def func1():
+#     print("this is Function 1")
+#
+#
+# def func2():
+#     print("This is function 2")
+
+# But here we want to print.
+# this is awesome function.
+# when we call either func1 or func2.
+# and code should not changed IT MUST BE SAME..
+
+
+# to do this we can use decorators
+
+
+# def decorator_function(any_function):
+#     def wrapper_function():
+#         print("This is awesome  function ")
+#         any_function()
+#     return wrapper_function
+#
+#
+# def func1():
+#     print("this is Function 1")
+#
+#
+# def func2():
+#     print("This is function 2")
+#
+#
+# var = decorator_function(func1)
+# var()
+#
+
+
+# @ use for decorators
+
+
+def decorator_function(any_function):
+    def wrapper_function():
+        print("This is awesome  function ")
+        any_function()
+    return wrapper_function
+
+@decorator_function # shorcut
+
+def func1():
+    print("this is Function 1")
+
+
+def func2():
+    print("This is function 2")
+
+
+# var = decorator_function(func1)
+# var()
+
+
+func1()
+# This is awesome  function
+# this is Function 1
