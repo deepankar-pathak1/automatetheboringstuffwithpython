@@ -1,0 +1,72 @@
+import time
+
+t1 = time.time()
+print('this is line one ')
+x = 5
+
+if x == 5:
+    print('x is equal to 5')
+print('this is line two')
+print('this is line two')
+print('this is line two')
+print('this is line two')
+print('this is line two')
+
+t2 = time.time()
+print(t2-t1)
+
+
+
+this is line one 
+x is equal to 5
+this is line two
+this is line two
+this is line two
+this is line two
+this is line two
+0.0
+
+Process finished with exit code 0
+
+
+# from functools import wraps
+# 
+# import time
+# 
+# def calculate_time(function):
+#     @wraps(function)
+#     def wrapper(*args,**kwargs):
+#         print(f"Executing {function.__name__}")
+#         t1 = time.time()
+#         returned_function = function(*args,**kwargs)
+#         t2 = time.time()
+#         total_time = t2-t1
+#         print(f"this function tool {total_time} Sec")
+#         return returned_function
+#     return wrapper
+# 
+# @calculate_time
+# def sqaure_finder(n):
+#     return [i**2 for i in range(1,n+1)]
+# 
+# print(sqaure_finder(10000))
+# 
+
+
+
+
+
+Executing sqaure_finder
+this function took 0.0 Sec
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+
+
+***********************************************************************
+
+
+
+
+
+
+
