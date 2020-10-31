@@ -1,0 +1,49 @@
+#generators
+# generators are iterators
+
+# iterator,iterable
+
+l = [1,2,3] #iterable
+
+# for i in l:
+#     print(i)
+
+# this work as follows
+
+# i = iter(l)
+# print(next(i))
+# print(next(i))
+# print(next(i))
+# print(next(i))
+#
+# # 1
+# 2
+# 3
+#     print(next(i))
+# StopIteration
+
+
+# next(l)
+# TypeError: 'list' object is not an iterator
+
+# print(map(lambda a:a**2,l)) #iteratoor
+
+# <map object at 0x0000017AE5B06A30>
+
+# for num in map(lambda a:a**2,l):
+#     print(num)
+
+
+# generators are iterators
+
+# one question must occur in your mind as Gen and iterators are same
+# why we are using genrators in comparion to list
+
+# list take more space in comparison to genrators
+# as in list every number is genrated
+
+# but in genrator, it takes less space because
+# as it genrate single number at single instance.
+
+# In genrator single number is genrated in single time
+# But in list, whole list is genrated at single instance.
