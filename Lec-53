@@ -1,0 +1,59 @@
+# >>>>  Decorator Practice <<<<
+# from functools import wraps
+#
+# def print_function_data(function):
+#     @wraps(function)
+#     def wrapper(*args,**kwargs):
+#         print(f"You are calling {function.__name__} function")
+#         print(f"{function.__doc__}")
+#
+#     return wrapper
+#
+# @print_function_data
+# def add(a,b):
+#     """This function takes two number as arguments """
+#     return a + b
+#
+#
+# print(add(8,8))
+
+# OUTPUT
+
+# You are calling add function
+# This function takes two number as arguments
+# None
+
+
+# we are getting None because here we have not returned this function
+
+# so to solve this we must do this
+
+
+from functools import wraps
+
+
+def print_function_data(function):
+    @wraps(function)
+    def wrapper(*args, **kwargs):
+        print(f"You are calling {function.__name__} function")
+        print(f"{function.__doc__}")
+        return function(*args,**kwargs) # << IMPORTANT >> << RETURN THIS >>
+
+    return wrapper
+
+
+@print_function_data
+def add(a, b):
+    """This function takes two number as arguments """
+    return a + b
+
+
+print(add(8, 8))
+
+
+# OUTPUT
+# You are calling add function
+# This function takes two number as arguments
+# 16
+
+
