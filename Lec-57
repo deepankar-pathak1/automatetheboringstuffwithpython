@@ -1,0 +1,33 @@
+
+# define generator function
+# take one number as arguments
+# generate a sequence of even number from 1 to that number.
+
+
+def even_generater(n):
+    for num in range(1,n+1):
+        if num % 2 == 0:
+            yield num
+#
+for num in even_generater(20):
+    print(num,end=" ")
+
+for num in even_generater(20):
+    print(num,end=" ")
+
+# O/P  2 4 6 8 10 12 14 16 18 20 2 4 6 8 10 12 14 16 18 20
+
+# here you can see that number is genrated two times because here we have
+# applied loop to the generated function
+
+ # but if we do in such a manner...
+#
+# even_nums = even_generater(20)
+#
+# for num in even_nums:
+#     print(num,end=" ")
+#
+# for num in even_nums:
+#     print(num,end=" ")
+
+# O/P 2 4 6 8 10 12 14 16 18 20
