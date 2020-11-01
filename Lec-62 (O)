@@ -1,0 +1,21 @@
+# instance method
+# instance and object are both same..
+# basically methods are those function  which are defined inside the class..
+
+# def __init__() # basically this is constructor, they are method's which are used to create object.
+# self is object
+
+class Person:
+    def __init__(self,f_n,l_n,age):
+        self.f_n = f_n
+        self.l_n = l_n
+        self.age = age
+
+    def full_name(self):
+        return f"{self.f_n} {self.l_n}"
+
+p1 = Person('Deepankar','Pathak',24)
+p2 = Person('Deepu','Pathak',24)
+
+print(p1.full_name()) # Deepankar Pathak
+print(p2.full_name()) # Deepu Pathak
