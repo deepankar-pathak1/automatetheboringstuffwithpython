@@ -1,0 +1,52 @@
+
+# create your first generator with generator function
+
+# 1) generator function
+# we use yield keyword inplace of print to create generator.
+
+# 10, 1 To 10
+
+# def nums(n):
+#     for i in range(1,n+1):
+#         yield(i)  # << we use yield keyword >>
+#
+#
+# # print(nums(10)) # <generator object nums at 0x000001A70195D6D0>
+#
+# # for number in nums(10):
+# #     print(number)
+#
+# # genrator creates a one number at single time in memory
+# # memory .....>1
+# # memory .....>2
+# # memory .....>3
+# # memory .....>4
+# # memory .....>5
+#
+# # and so on...
+#
+# # and here next is created when we want or we tell it to generate number.
+#
+# # and here for loop is demanding to generate next number ..
+#
+# number = nums(10)
+#
+# # for num in number:  (A)
+#     print(num,end=" ")
+#
+# # 1 2 3 4 5 6 7 8 9 10
+#
+#
+# # for num in number:  (B)
+#     print(num,end=" ")
+
+
+# 1 2 3 4 5 6 7 8 9 10
+
+
+# in case A number is genrated and deleted and when we again
+# created the another for loop again number is created and deleted.
+
+# so we can say that generator created number one time and then delete it.
+
+
