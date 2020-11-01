@@ -1,0 +1,15 @@
+# generator comprehension
+
+# as we have learned earlier
+# list comprehension
+
+# sq = [i**2 for i in range(1,11)]
+# print(sq)
+
+sq_gen = (i**2 for i in range(1,11))
+print(sq_gen) # <generator object <genexpr> at 0x00000289432ED6D0>
+
+# in generated comprehension we have used parenthesis in place of square bracket that we use in list 
+
+for num in sq_gen:
+    print(num,end=" ") # 1 4 9 16 25 36 49 64 81 100 
