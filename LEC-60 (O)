@@ -1,0 +1,27 @@
+# CLASS
+# Try to put first letter of class Name in Capital letter
+# INIT METHOD : - it is also called constructor
+# basically in class we define our next upcoming object
+# self refers to : object (ex p1,p2)
+
+class Person:
+    def __init__(self,first_name,last_name,age):
+        # instance variable
+        print('init method // constructor get called')
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+
+#Create object
+p1= Person('deepankar','pathak',24)
+# p2 = Person('anshu','khandelwal',25)
+
+
+print(p1.first_name) #deepankar
+# print(p2.first_name) #anshu
+
+
+# firstly constructor is called than its object is called..
+
+# init method // constructor get called
+# deepankar
