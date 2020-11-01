@@ -1,0 +1,21 @@
+# create a laptop class with attributes like brand name,model name , price
+# create two objects/instance of your laptop class
+
+class Laptop:
+    def __init__(self,brand_name,model_name,price):
+        # instance variable
+
+        self.brand_name = brand_name
+        self.model_name = model_name
+        self.price = price
+
+        # we can also do this,we can create more instance variable 
+        self.laptop_name = brand_name+ ' ' + model_name
+
+l1 = Laptop("DELL","G3",80)
+l2 = Laptop("Hp","G8",81)
+
+
+print(l1.model_name)
+print(l2.model_name)
+print(l1.laptop_name) # DELL G3
