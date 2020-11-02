@@ -1,0 +1,15 @@
+# Construct a code, when we add instance it should be incremented by one\
+
+class Person:
+    count_instance = 0 # class Variable
+    def __init__(self,f_n,l_n,age):
+        Person.count_instance += 1
+        self.f_n = f_n
+        self.l_n = l_n
+        self.age = age
+
+p1 = Person('Deepu','Pathak',11)
+p2 = Person('Deepu','Pathak',11)
+p3 = Person('Deepu','Pathak',11)
+
+print(Person.count_instance) # 3
