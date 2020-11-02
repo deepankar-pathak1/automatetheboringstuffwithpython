@@ -1,0 +1,61 @@
+# Class method as a constructor
+
+# as we have used earlier __init__ as construct,
+# but we want to create new constructor with different format we can do this
+# as follows
+
+class Person:
+    count_instance = 0
+
+    def __init__(self,f_n,l_n,age):
+        Person.count_instance += 1
+        self.f_n = f_n
+        self.l_n = l_n
+        self.age = age
+
+    @classmethod
+    def from_string(cls,string):
+        first,last,age = string.split(',')
+        return cls(first,last,age) #object
+
+p1 = Person.from_string('Deepu,Pathak,24') # from new constructor
+
+p2 = Person('Deepankar','Pathak',25) # init constructor
+
+print(p1.f_n) # Deepu
+print(p1.age) # 24
+
+print(p2.f_n) # Deepankar
+
+
+
+
+********************* ***************************** **************************************
+
+
+
+# STATIC METHOD....
+
+# to define static method we use static method decorator
+
+
+class Person:
+    count_instance = 0
+
+    def __init__(self,f_n,l_n,age):
+        Person.count_instance += 1
+        self.f_n = f_n
+        self.l_n = l_n
+        self.age = age
+
+    @classmethod
+    def from_string(cls,string):
+        first,last,age = string.split(',')
+        return cls(first,last,age) #object
+
+    @staticmethod
+    def hello():
+        print("Static method code...")
+
+p2 = Person.from_string("deepankar,pathak,24")
+Person.hello() # Static method code...
