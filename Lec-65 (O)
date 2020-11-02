@@ -1,0 +1,23 @@
+# now if we want to change the discount percentage for a particular laptop
+
+
+
+
+
+class Laptop:
+    discount = 10 # class Variable
+    def __init__(self,brand_name,model_name,price):
+        #instance variables
+        self.brand_name = brand_name
+        self.model_name = model_name
+        self.price = price
+
+    def apply_discount(self):
+        off_price = (self.discount/100) * self.price # here we have changed Laptop to self..
+        return self.price - off_price
+
+laptop1 = Laptop('hp','axc',9000)
+laptop2 = Laptop('apple','macbookpro',9000)
+print(laptop1.apply_discount()) # 8100.0
+laptop2.discount = 50 # laptop2 discount percentage is changed now
+print(laptop2.apply_discount()) # 4500
