@@ -1,0 +1,16 @@
+# EXERCISE >>>
+
+
+class Laptop:
+    def __init__(self,brand_name,model_name,price):
+        #instance variables
+        self.brand_name = brand_name
+        self.model_name = model_name
+        self.price = price
+
+    def apply_discount(self,num):
+        off_price = (num/100) * self.price
+        return self.price - off_price
+
+laptop1 = Laptop('hp','axc',9000)
+print(laptop1.apply_discount(60)) # 3600.0
