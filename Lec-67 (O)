@@ -1,0 +1,25 @@
+# Class method
+# class methods are least use in comparison to instance method
+
+class Person:
+    count_instance = 0 # class variable/ class Atrribute
+    def __init__(self,f_n,l_n,age):
+        Person.count_instance += 1
+
+        self.f_n = f_n
+        self.l_n = l_n
+        self.age = age
+
+    @classmethod
+    def counts_instance(cls):
+        return f"You have {cls.count_instance} instance of {cls.__name__}"
+
+    def full_name(self):
+        return f"{self.f_n} {self.l_n}"
+
+p1 = Person('deepu','Pathak',23)
+print(Person.counts_instance())
+
+
+
+You have 1 instance of Person
