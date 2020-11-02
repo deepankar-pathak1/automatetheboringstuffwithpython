@@ -1,0 +1,44 @@
+# class variable
+
+# instance variable is unique for every object
+# as we have learnt earlier instance variable as self.brand and so on...
+
+
+# class variable ... is not unique...
+
+# for example we are creating Circle Class,area,and circum..
+
+# class Circle:
+#     pi = 3.14 # Class Variable
+#
+#     def __init__(self,radious):
+#         self.radious = radious
+#
+#     def calc_circumferance(self):
+#         return 2*Circle.pi*self.radious
+#
+# c = Circle(4)
+# c1 = Circle(10)
+#
+# print(c.calc_circumferance()) # 25.12
+# print(c1.calc_circumferance()) #62.800000000000004
+
+
+
+
+# class Laptop:
+#     discount = 10 # class Variable
+#     def __init__(self,brand_name,model_name,price):
+#         #instance variables
+#         self.brand_name = brand_name
+#         self.model_name = model_name
+#         self.price = price
+#
+#     def apply_discount(self):
+#         off_price = (Laptop.discount/100) * self.price
+#         return self.price - off_price
+#
+# laptop1 = Laptop('hp','axc',9000)
+# print(laptop1.apply_discount()) # 8100.0
+
+
