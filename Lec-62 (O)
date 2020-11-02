@@ -19,3 +19,41 @@ p2 = Person('Deepu','Pathak',24)
 
 print(p1.full_name()) # Deepankar Pathak
 print(p2.full_name()) # Deepu Pathak
+
+print(Person.full_name(p2)) # Deepu Pathak
+
+
+
+
+
+
+
+
+*************************************************
+
+
+
+class Person:
+    def __init__(self,f_n,l_n,age):
+        self.f_n = f_n
+        self.l_n = l_n
+        self.age = age
+
+    def full_name(self):
+        return f"{self.f_n} {self.l_n}"
+
+    def is_above_18(self):
+        return self.age>18
+
+
+
+# p1 = Person('Deepankar','Pathak',24)
+# p2 = Person('Deepu','Pathak',24)
+# 
+# print(p1.full_name()) # Deepankar Pathak
+# print(p2.full_name()) # Deepu Pathak
+# 
+# print(Person.full_name(p2)) # Deepu Pathak
+
+
+print(p1.is_above_18()) # True
