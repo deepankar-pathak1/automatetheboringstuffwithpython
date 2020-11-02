@@ -41,4 +41,5 @@
 # laptop1 = Laptop('hp','axc',9000)
 # print(laptop1.apply_discount()) # 8100.0
 
+print(laptop1.__dict__) # {'brand_name': 'hp', 'model_name': 'axc', 'price': 9000}
 
