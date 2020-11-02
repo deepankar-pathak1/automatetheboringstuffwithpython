@@ -1,0 +1,19 @@
+# <<< ENCAPSULATION, ABSTRACTION,NAMING CONVENTION, NAME MANGLING >>>
+
+# class Phone:
+#     def __init__(self,brand,model_name,price):
+#         self.brand = brand
+#         self.model_name = model_name
+#         self.price = price
+#
+#     def making_a_call(self,phone_number):
+#         print((f"Calling {phone_number}"))
+#
+#     def full_name(self):
+#         return f"{self.brand} {self.model_name}"
+
+# _name # convention for private name
+# as in python everything is public so to represnet something
+# privately we use _name
+
+# __name__ # dunder/magic methods
