@@ -1,0 +1,91 @@
+
+# inheritiance
+
+
+# class Phone:
+#     def __init__(self,brand,model_name,price):
+#         self.brand = brand
+#         self.model_name = model_name
+#         self._price = max(price,0)
+#
+#     def full_name(self):
+#         return f"{self.brand} {self.model_name}"
+#
+#     def make_call(self,number):
+#         return f"calling {number}"
+#
+# class Smartphone:
+#     def __init__(self,brand,model_name,price,ram,internal_memory,rear_camera):
+#         self.brand = brand
+#         self.model_name = model_name
+#         self._price = max(price,0)
+#         self.ram = ram
+#         self.internal_memory = internal_memory
+#         self.rear_camera = rear_camera
+#
+#     def full_name(self):
+#         return f"{self.brand} {self.model_name}"
+#
+#     def make_call(self,number):
+#         return f"Calling {number}"
+#
+#
+# phone = Phone('nokia','1100',1000)
+# smartphone = Smartphone('oneplus','5',3000,'6 Gb','64 GB','20 MP')
+# print(phone.full_name())
+# print(smartphone.full_name())
+
+# O/P
+# nokia 1100
+# oneplus 5
+
+
+
+
+
+
+# as we know that from concept of coding is that DRY Dont repeat the code
+# but here we are repeating instance variable twice .
+
+# if it can be possible that,we will write only those things which are extra in smart phone class..
+# than it will follow DRY concept
+
+# it can be done WITH " INHERITIENCE" ...
+
+
+
+
+
+class Phone: # base class/ Parent class
+    def __init__(self,brand,model_name,price):
+        self.brand = brand
+        self.model_name = model_name
+        self._price = max(price,0)
+
+    def full_name(self):
+        return f"{self.brand} {self.model_name}"
+
+    def make_call(self,number):
+        return f"calling {number}"
+
+class Smartphone(Phone): # FROM inheritience concept..# derived class / child class
+    def __init__(self,brand,model_name,price,ram,internal_memory,rear_camera):
+        # two ways
+        # Phone.__init__(self,brand,model_name,price) # uncommon way
+        super().__init__(brand,model_name,price) # common way
+        self.ram = ram
+        self.internal_memory = internal_memory
+        self.rear_camera = rear_camera
+
+
+phone = Phone('nokia','1100',1000)
+smartphone = Smartphone('oneplus','5',3000,'6 Gb','64 GB','20 MP')
+print(phone.full_name())
+print(smartphone.full_name())
+
+# O/P
+# nokia 1100
+# oneplus 5
+
+
+
