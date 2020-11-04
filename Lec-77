@@ -1,0 +1,40 @@
+#Exception Handling
+# try and except else finally
+
+while True:
+    try:
+        age = int(input("Enter Your age : "))
+        break
+
+    except ValueError:
+        print("invalid input")
+
+    except:
+        print("unexpected error.")
+
+if age < 18:
+    print("You can't play this Game")
+else:
+    print("You can play this game")
+
+
+
+*********************************** ******************** **************************
+
+
+
+
+# else and finally clause in exception handling
+
+while True:
+    try:
+        number = int(input("Enter a number : "))
+    except ValueError:
+        print("You didn't Entered Integer ")
+    except:
+        print("unexpected Error")
+    else:
+        print(f"User Input : {number}")
+        break
+    finally:
+        print("This will run all time ....")
