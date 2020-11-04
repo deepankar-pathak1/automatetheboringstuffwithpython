@@ -1,0 +1,38 @@
+
+# raise error example 1
+# not implemented error
+# abstract method
+
+class Animal:
+    def __init__(self,name):
+        self.name = name
+
+    def sound(self):
+        raise NotImplementedError("YOU HAVE TO DEFINE METHODS IN SUBCLASS..") # this is called Abstract method..
+
+class Dog(Animal):
+    def __init__(self,name,breed):
+        super().__init__(name)
+        self.breed = breed
+
+    def sound(self):
+        return 'Bow Bow!'
+
+class cat(Animal):
+    def __init__(self,name,breed):
+        super().__init__(name)
+        self.breed = breed
+    def sound(self):
+        return 'meow meow..'
+
+
+# doggy = Dog('bonny','pug')
+# print(doggy.sound())
+# This is animal sound
+# after puting NOT implemented error
+
+doggy = Dog('bonny','pug')
+print(doggy.sound())
+# Bow Bow!
+
+
