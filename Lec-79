@@ -1,0 +1,21 @@
+
+# pyhton custom exceptions
+# we use it becuase to increase Readability of code.
+
+class NameTooShortError(ValueError):
+    pass
+
+def validate(name):
+    if len(name) < 8:
+        raise NameTooShortError("name is to short")
+
+username = input("Enter Your name : ")
+validate(username)
+print(f"Hello {username}")
+
+
+
+# Enter Your name : d
+# 
+#   raise NameTooShortError("name is to short")
+# __main__.NameTooShortError: name is to short
