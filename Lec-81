@@ -1,0 +1,44 @@
+# read file
+
+
+# f = open('currency.txt','r')
+# print(f"cursor Position {f.tell()}") # cursor Position 0
+# print(f.read())
+# print(f"cursor Position {f.tell()}") # cursor Position 2195
+# print(f"before seek : {f.tell()}")
+# f.seek(0)
+# print(f"after Seek : {f.tell()}")
+# print(f.read()) # here nothing will print
+# # as it read like movemnet of cursor so once it will all the stuff
+# # it does not read anything
+#
+# f.close()
+# #tell method
+#
+# # seek method()
+
+
+# readline() method
+# it read one line at a time
+
+# f = open("currency.txt","r")
+# print(f.readline())
+# # Euro	0.853503	1.171642
+
+# readlines()
+f = open("currency.txt","r")
+
+# lines = f.readlines()
+# print(lines)
+# print(len(lines))
+# f.close()
+
+
+# to know name of file we can use
+# data discripter
+
+# print(f.name) # currency.txt
+print(f.closed) #False
+f.close()
+print(f.closed) # True
+
