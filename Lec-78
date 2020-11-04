@@ -1,0 +1,40 @@
+# exercise ....
+
+
+
+# def divide(a,b):
+#     if type(a) == int and type(b) == int:
+#         if a != 0 and b != 0:
+#             return a / b
+#         else:
+#             raise ZeroDivisionError("Please don't divide by zero..")
+#     else:
+#         return "a and b Must be Integer"
+
+# print(divide(5,"0")) # a and b Must be Integer
+# print(divide(5,0)) # ZeroDivisionError: Please don't divide by zero..
+# print(divide(5,5)) # 1.0
+
+
+def divide(a,b):
+    try:
+        return a/b
+    except ZeroDivisionError as err:
+        return err
+    except TypeError as ok:
+        return ok
+    
+    # finally:
+    #     return "Divide"
+
+print(divide(5,0))
+print("************** ")
+print(divide("5",0))
+print("************** ")
+print(divide(5,2))
+#
+# division by zero
+# **************
+# unsupported operand type(s) for /: 'str' and 'int'
+# **************
+# 2.5
