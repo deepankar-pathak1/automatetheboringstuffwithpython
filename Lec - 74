@@ -1,0 +1,40 @@
+# 
+# # new chapter...
+# 
+# 
+# # built in errors
+# # exception, how to handle them
+# # raise your own errors, debugging etc
+# 
+# 
+# # built in errors
+# 
+# # syntax errors
+# # indentation errors
+# # name errors
+# # type errors
+# # index errors
+# # value errors
+# # attribute errors
+# # key errors
+# 
+# 
+# # raise errors
+# 
+# # def add(a,b):
+# #     return a + b
+# 
+# # print(add(2,3)) # 5
+# # print(add('2','3')) # 23
+# 
+# def add(a,b):
+#     if type(a) is int and type(b) is int:
+#         return a + b
+#     raise TypeError("OOPS WRONG DATA TYPE ")
+# 
+# 
+# print(add('2','3'))
+# 
+# 
+# # TypeError: OOPS WRONG DATA TYPE
+# 
