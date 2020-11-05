@@ -8,3 +8,36 @@ with open('currency.txt') as f:
     print(data)
 
 print(f.closed)
+
+
+
+# w , a , r+
+
+# this is used to write the file..
+# here we have created a new file name file1.txt
+
+# with open('file1.txt','w') as f:
+#
+#     f.write('hello')
+
+# here append--'a' is used to append the data Please Do it...
+
+
+# with open('file1.txt','a') as f:
+#
+#     f.write('Please Do it ..')
+
+# r+ mode
+# with r+ mode we can read and write both..
+# but it does not create a file
+
+# with open('file2.txt','r+') as f:
+#     f.write("please do it")
+
+
+# FileNotFoundError: [Errno 2] No such file or directory: 'file2.txt'
+# as we know that it does not create a file.
+
+# with open('file1.txt','r+') as f:
+#     f.write("please do it")
+# 
