@@ -1,0 +1,49 @@
+# # now if we want to read from file1 to file 2
+#
+# with open('file1.txt','r') as rf:
+#     with open('file2.txt','w') as wf:
+#         wf.write(rf.read())
+
+
+
+*************** ******************** **************************
+
+
+
+# exercise 1
+
+# with open('salary.txt','r') as rf:
+#     with open('output.txt','a') as wf:
+#         for line in rf.readlines():
+#             name,salary = line.split(',')
+#             wf.write(f"{name} and salary is {salary}")
+
+
+# salary.txt
+
+# Deepankar,100
+# Pathak,200
+
+# output.txt
+# 
+# Deepankar and salary is 100
+# Pathak and salary is 200
+
+
+************* ***************** *********************
+
+
+
+
+# to read csv file we use csv reader
+
+from csv import reader
+
+with open('file2.txt','r') as f:
+    csv_reader = reader(f)
+
+    next(csv_reader)
+
+
+    for row in csv_reader:
+        print(row)
