@@ -1,0 +1,32 @@
+
+# os module
+
+
+import os
+#
+# os.getcwd()
+# print(os.getcwd()) # used to get the Current Path
+# os.mkdir("Movies") # it is used to create a new folder name Movies.
+#
+# if os.path.exists("Movies"):
+#     print("already exist")
+# else:
+#     os.mkdir("Movies")
+
+
+# # to create a file
+# open("file.txt","a").close()
+
+# to change the directory we used
+
+# os.chdir(r" ")
+
+# listdir() - it will give you list of all the files and folder of current working directory
+
+# print(os.listdir())
+
+
+************ **************** **********************
+
+
+
