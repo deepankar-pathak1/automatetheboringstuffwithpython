@@ -1,0 +1,45 @@
+Write csv file we can use
+
+#writer,Dictwriter
+
+from csv import writer
+
+with open('file3.csv','w',newline='') as f:
+    csv_writer = writer(f)
+    # there are two methods
+    # writerow and writerows
+    csv_writer.writerow(['name','country'])
+    csv_writer.writerow(['Deepankar',"INDIA"])
+
+
+name,country
+Deepankar,INDIA
+
+
+
+
+************ **************** * **************** *********
+
+
+
+#Write csv file we can use
+
+#writer,Dictwriter
+
+from csv import writer
+
+with open('file3.csv','w',newline='') as f:
+    csv_writer = writer(f)
+    # there are two methods
+    # writerow and writerows
+    # csv_writer.writerow(['name','country'])
+    # csv_writer.writerow(['Deepankar',"INDIA"])
+
+    csv_writer.writerows([['name,country'],['Deepankar','India']])
+    
+    
+    
+    
+ "name,country"
+Deepankar,India
+
