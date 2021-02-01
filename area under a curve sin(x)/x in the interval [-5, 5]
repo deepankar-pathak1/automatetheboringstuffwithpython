@@ -1,0 +1,24 @@
+Find area under a curve sin(x)/x in the interval [-5, 5]
+import math
+def f(x):
+    if x != 0:
+        return math.sin(x)/x;
+    else:
+      return Nan
+      
+      
+ # we have to take in limit -5 to 5
+x = -5 
+delta = 0.01
+area = 0
+
+while (x<5):
+    print(area,x)
+
+    if x == 0:
+        continue;
+    
+    area = area + f(x)*delta
+    x = x + delta
+
+print(f"Area : {area} --> X : {x} --> Delta : {delta}")
